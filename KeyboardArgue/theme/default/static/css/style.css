@@ -1,0 +1,109 @@
+
+html{
+	--nav-blue:hsla(192, 52%, 66%, 0.2);
+	--text-red:hsla(12, 52%, 66%, 1);
+	--text-blue:hsla(192, 52%, 66%, 1);
+	--background-skin:hsla(39, 38%, 83%, 0.3);
+	--link-blue:hsla(219, 38%, 83%, 1);
+}
+
+:root{
+	box-sizing: border-box;
+}
+
+*,
+::before,
+::after{
+    box-sizing: inherit;
+}
+body{
+	margin: 0;
+	background-color: var(--background-skin);
+}
+ul{
+	list-style-type: none;
+
+}
+li{
+
+}
+a{
+	text-decoration: none;
+	color: var(--link-blue);
+}
+a:hover{
+	background-color: var(--nav-blue);
+}
+h3{
+	text-align: center;
+}
+h4{
+	text-align: center;
+}
+.nav{
+	display: flex;
+	background-color: var(--nav-blue);
+	justify-content: space-between;
+	align-items: center;
+}
+.nav > ul {
+	margin: 0;
+	display: flex;
+	align-items: center;
+}
+
+
+
+.nav > ul > li{
+	margin-top: 0;
+}
+
+.nav > ul > li + li {
+	margin-left: 2em;
+}
+.homepage {
+	color: var(--text-red);
+	font-size: 1.2em;
+}
+
+.container{
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+main{
+	display: flex;
+}
+
+.card-list{
+	flex: 1;
+	margin: .2em;
+}
+
+.red{
+	color: var(--text-red);	
+}
+.card-list > .card + .card{
+	margin-top: .5em;
+
+}
+
+.card{
+	border-bottom: 1px solid #000;
+}
+
+
+.card__footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.center-card{
+	flex: 1;
+	text-align: center;
+}
+
+.blue{
+	color: var(--text-blue);
+}
