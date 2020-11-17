@@ -20,5 +20,11 @@ class Comment(models.Model):
         verbose_name="创建时间"
     )
 
+    def __str__(self):
+        if len(self.content) >= 10:
+            return self.content[:10]+"..."
+        else:
+            return self.content
+
     class Meta:
         verbose_name = verbose_name_plural = "观点"

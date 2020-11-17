@@ -26,7 +26,7 @@
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
     <option name="TEMPLATE_FOLDERS">
       <list>
-        <option value="$MODULE_DIR$/../KeyboardArgue\templates" />
+        <option value="$MODULE_DIR$/KeyboardArgue/theme/default/templates" />
       </list>
     </option>
   </component>

@@ -21,6 +21,9 @@ class Category(models.Model):
                                 )
     create_time = models.DateTimeField(auto_now_add=True, verbose_name="创建时间")
 
+    def __str__(self):
+        return self.name
+
     class Meta:
         verbose_name = verbose_name_plural = "分类"
 
@@ -52,6 +55,9 @@ class Battle(models.Model):
 
     def get_blue_count(self):
         pass
+
+    def __str__(self):
+        return self.theme
 
     class Meta:
         verbose_name = verbose_name_plural = "对战"
